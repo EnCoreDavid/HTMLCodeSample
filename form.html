@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form>
+            <label>
+                First name
+                <input type="text" name="firstname" required>
+            </label>
+            <label>
+                Last name
+                <input type="text" name="lastname" required>
+            </label>
+            <br>
+            <label for="male">Male</label>
+            <input name="gender" id="male" type="radio" value="Male">
+            <label for="female">Male</label>
+            <input name="gender" id="female" type="radio" value="Female">
+            <br>
+            <label>
+                Email: 
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Password: 
+                <input type="password" name="password" minlength="3">
+            </label>
+            <p>Birthday</p>
+            <label>
+                Birthday: 
+                <select name="month">
+                    <option>Jan</option>
+                    <option>Feb</option>
+                </select>
+            </label>
+            <div>
+                <label for="agreed"> I Agree </label>
+                <input id="agreed" type="checkbox" name="agreed" value="YES">
+            </div>
+            <button>submit</button>
+        </form>
+    </body>
+</html>
